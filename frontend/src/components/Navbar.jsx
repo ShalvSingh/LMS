@@ -1,9 +1,9 @@
-import React, {useState } from 'react';
+import React, { useState, useRef } from 'react';
 import {navbarStyles} from '../assets/dummyStyles';
 import logo from '../assets/logo.png';
 import {BookMarked, BookOpen, Contact, Home, Users} from 'lucide-react';
 import { NavLink } from 'react-router-dom';
-import { useClerk, useAuth , useUser} from '@clerk/clerk-react';
+import { useClerk, useAuth, useUser, UserButton } from '@clerk/clerk-react';
 
 
 const navItems = [
